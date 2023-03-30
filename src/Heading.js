@@ -1,7 +1,7 @@
-function Heading() {
-    let title = "Some title";
+function Heading(props) {
     return (
-      <h1> {title} </h1>
+      <h1> {props.title} </h1>
     );
   }
-export {Heading};  
+
+export default Heading;
