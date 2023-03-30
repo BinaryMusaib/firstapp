@@ -1,6 +1,13 @@
+
+import React, {useState} from "react";
+
 function Heading(props) {
+    const [showMenu, setShowMenu] = useState(false);
     return (
-      <h1> {props.title} </h1>
+      <div>
+        {console.log(showMenu)}
+        {console.log(setShowMenu)}
+      </div>
     );
   }
 

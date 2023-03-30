@@ -7,6 +7,7 @@ import Sidebar from './Sidebar';
 import Bag from './Bag';
 import avatar from './logo192.png';
 import Btn from './Btn';
+import InputComponent from './InputComponent';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -22,12 +23,16 @@ function App() {
   const firstName = "Musaib Samar"
   const clickHandling = () => console.log("clicked...");
   return (
-    // <div className="App">
-    //   <Header name = {firstName} color = "Purple" />
-    //   <Main greet = "Howdy" />
-    //   <Logo> Hello, I'm testing the props.children. </Logo>
-    // </div>
-    <Btn clickHandler = {clickHandling}/>
+    <div>
+    {/* // // <div className="App">
+    // //   <Header name = {firstName} color = "Purple" />
+    // //   <Main greet = "Howdy" />
+    // //   <Logo> Hello, I'm testing the props.children. </Logo>
+    // // </div> */}
+      {/* <Btn clickHandler = {clickHandling}/>
+      <Heading /> */}
+      <InputComponent />
+    </div>
     
   );
 }
