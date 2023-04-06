@@ -4,8 +4,8 @@ export default function InputComponent() {
 
     const [inputText, setText] = useState("hello");
 
-    function handleChange(e) {
-        setText(e.target.value);
+    function handleChange(event) {
+        setText(event.target.value);
     }
 
     return (

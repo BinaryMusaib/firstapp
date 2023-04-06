@@ -8,6 +8,9 @@ import Bag from './Bag';
 import avatar from './logo192.png';
 import Btn from './Btn';
 import InputComponent from './InputComponent';
+import Hooks from './Hooks';
+import RegisterForm from './RegisterForm';
+import PropDrilling from './PropDrilling';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -32,6 +35,8 @@ function App() {
       {/* <Btn clickHandler = {clickHandling}/>
       <Heading /> */}
       <InputComponent />
+      <RegisterForm />
+      <PropDrilling />
     </div>
     
   );
