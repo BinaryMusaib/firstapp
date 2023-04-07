@@ -11,6 +11,9 @@ import InputComponent from './InputComponent';
 import Hooks from './Hooks';
 import RegisterForm from './RegisterForm';
 import PropDrilling from './PropDrilling';
+import Homepage from './Homepage';
+import Aboutme from './Aboutme';
+import { Route, Routes, Link } from 'react-router-dom';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -37,6 +40,17 @@ function App() {
       <InputComponent />
       <RegisterForm />
       <PropDrilling />
+      <div style={ {padding: "20px", margin: "10px"}}>
+        <nav style={ { border: "10px solid red", textAlign: "justify" }}>
+          <Link to = "/"> Homepage</Link>
+          <Link to = "/about-me"> About me</Link>
+        </nav>
+        <Routes>
+          <Route path = "/" element = { <Homepage /> } />
+          <Route path = "/about-me" element = { <Aboutme /> } />
+        </Routes>
+        
+      </div>
     </div>
     
   );
