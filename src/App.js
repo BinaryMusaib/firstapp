@@ -28,6 +28,7 @@ function Logo(props) {
 function App() {
   const firstName = "Musaib Samar"
   const clickHandling = () => console.log("clicked...");
+  const temp = false;
   return (
     <div>
     {/* // // <div className="App">
@@ -40,8 +41,10 @@ function App() {
       <InputComponent />
       <RegisterForm />
       <PropDrilling />
-      <div style={ {padding: "20px", margin: "10px"}}>
-        <nav style={ { border: "10px solid red", textAlign: "justify" }}>
+      {temp ? <Homepage /> : <RegisterForm />}
+      
+      <div style={{padding: "20px", margin: "10px"}}>
+        <nav style={{ border: "10px solid red", textAlign: "justify" }}>
           <Link to = "/"> Homepage</Link>
           <Link to = "/about-me"> About me</Link>
         </nav>
