@@ -14,6 +14,7 @@ import PropDrilling from './PropDrilling';
 import Homepage from './Homepage';
 import Aboutme from './Aboutme';
 import { Route, Routes, Link } from 'react-router-dom';
+import testImage from './assets/images/photo.jpeg';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -54,6 +55,15 @@ function App() {
         </Routes>
         
       </div>
+      <img
+        height = {200}
+        src = {testImage}
+        alt = {"Test Image."}
+      />
+      <img
+        height = {200}
+        src = {require("./assets/images/photo.jpeg")}
+      />
     </div>
     
   );
