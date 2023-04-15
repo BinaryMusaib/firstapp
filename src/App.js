@@ -17,6 +17,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 import testImage from './assets/images/photo.jpeg';
 import ReactPlayer from "react-player/youtube";
 import MyVideo from './MyVideo';
+import SimpleCalculator from './SimpleCalculator';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -41,6 +42,7 @@ function App() {
     // // </div> */}
       {/* <Btn clickHandler = {clickHandling}/>
       <Heading /> */}
+      <SimpleCalculator />
       <InputComponent />
       <RegisterForm />
       <PropDrilling />
