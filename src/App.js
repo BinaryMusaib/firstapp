@@ -15,6 +15,8 @@ import Homepage from './Homepage';
 import Aboutme from './Aboutme';
 import { Route, Routes, Link } from 'react-router-dom';
 import testImage from './assets/images/photo.jpeg';
+import ReactPlayer from "react-player/youtube";
+import MyVideo from './MyVideo';
 
 function Logo(props) {
   const userPic = <img src = {avatar} />;
@@ -56,6 +58,7 @@ function App() {
         
       </div>
       <img
+        style={{padding: "12px"}}
         height = {200}
         src = {testImage}
         alt = {"Test Image."}
@@ -64,6 +67,7 @@ function App() {
         height = {200}
         src = {require("./assets/images/photo.jpeg")}
       />
+      <MyVideo />
     </div>
     
   );
